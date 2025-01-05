@@ -1,0 +1,16 @@
+[
+    {
+        "ID": "47b90",
+        "NOME": "Celular A34 Samsung",
+        "CATEGORIA": "Smartphone",
+        "ESTOQUE": "10",
+        "PRECO": "1.800"
+    },
+    {
+        "ID": "a2855",
+        "NOME": "Carregador",
+        "CATEGORIA": "Tipo C",
+        "ESTOQUE": "50",
+        "PRECO": "20.50"
+    }
+]
