@@ -151,7 +151,7 @@ def deletar():
                 print('Os dados deste produto sarão mantidos!')
                 voltar_menu()
     else:
-        print(f"😒 {cores['vermelho']}Nenhuma ONG encontrada com esse CNPJ.{cores['limpar']}")
+        print(f"{cores['vermelho']}Nenhum Produto encontrado com esse ID.{cores['limpar']}")
         voltar_menu()
 
 def buscar():
