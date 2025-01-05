@@ -144,7 +144,7 @@ def deletar():
                 print("-" *25)
                 print("Excluindo Produto...")
                 sleep(2)
-                print(f"{cores['verde']}Produto deletado com sucesso. ✨{cores['limpar']}")
+                print(f"{cores['verde']}Produto deletado com sucesso.{cores['limpar']}")
                 salvar_dados(lista_de_produtos)
                 voltar_menu()
             else:
@@ -157,7 +157,7 @@ def deletar():
 def buscar():
     lista_de_produtos = carregar_dados()
     subtitulo("Buscar Produto")
-    buscando_produto = input("Digite o nome ou ID da ONG: ")
+    buscando_produto = input("Digite o nome ou ID: ")
 
     busca = [
         produto for produto in lista_de_produtos 
@@ -169,7 +169,7 @@ def buscar():
         for produto in busca:
             print(f"- ID: {produto['ID']}\n- Nome: {produto['NOME']}\n- Categoria: {produto['CATEGORIA']}\n- Estoque: {produto['ESTOQUE']}\n- Preço: {produto['PRECO']} ")
     else:
-        print(f"😒 {cores['vermelho']}Nenhum produto encontrado com esse nome ou ID.{cores['limpar']}")
+        print(f"{cores['vermelho']}Nenhum produto encontrado com esse nome ou ID.{cores['limpar']}")
 
     voltar_menu()
 
